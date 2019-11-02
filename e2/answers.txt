@@ -1,0 +1,2 @@
+1. The result of calculation is the number of trending of rating, It's float datetype. By linregress y = k*x+b where y is the estimated value, k is the slope and b is the intercept.
+2. Because timestamp can convert time object to float then we can use these datas to drew a fit line according to interceptions. timestamp and created_at are actually same thing but different expression.

@@ -1,0 +1,2 @@
+1. From the graph residual looks normal, and as we get p-value 1.5139606492959894e-106 which is small enough to prove slope is different from 0. So the rating is increasing.
+2. Yes, because true signal in the noise is various so using kalman is more precise.

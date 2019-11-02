@@ -1,0 +1,2 @@
+1. I think I got a better result with Kalman smoothing. Kalman smoothing has slightly strong fluctuation than loess when some outlier happens.
+2. Time and speed can be a potential referance for computer to analyse. Also provide a wider referance data.

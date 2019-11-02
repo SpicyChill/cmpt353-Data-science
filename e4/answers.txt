@@ -1,0 +1,3 @@
+1.No, Because according to my result I think temperature isn't correlated enough with population density.
+
+2.Reading a compressed file from disk has less operation compare with decompressed file, the decompressed file is big to load on RAM takes more time.

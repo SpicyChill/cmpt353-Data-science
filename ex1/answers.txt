@@ -1,0 +1,2 @@
+1.I used the same calculations to get "City with lowest total precipitation". I think numpy is easier to work with and more readable, pandas needs to be careful about datatype.
+2. pivot_months_pandas = 27.1 ms ± 3.83 ms. pivot_months_loops = 984 ms ± 67 ms .  pivot_months_pandas is much faster because we used build in function vectorize instead of loop to count each value once.

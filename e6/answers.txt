@@ -1,0 +1,3 @@
+1. In chi2 test and the mannwhitney test, p-value was above 0.05, so we can reject the hypothesis that new interface is used more frequently. We are not p-hacking.
+2. We need 21 tests to do a t-test between each pair of sorting algorithms.For 21 tests we should look for p < 0.05/21 = 0.0024.
+3.From fastest to slowest: partition_sort, qs1, qs4 or qs5, qs2 or qs3, merge1. The ones which are not distinguishable are qs4 with qs5 and qs2 with qs3. 

@@ -1,0 +1,57 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+import sys
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import statsmodels.api as sm
+lowess = sm.nonparametric.lowess
+#filename = sys.argv[1]
+
+
+# In[2]:
+
+
+filename='sysinfo.csv'
+
+
+# In[13]:
+
+
+cpu_data = pd.read_csv(filename,parse_dates=[4])
+
+
+# In[17]:
+
+
+#plt.figure(figsize=(12, 4))
+#plt.plot(cpu_data['timestamp'], cpu_data['temperature'], 'b.', alpha=0.5)
+#plt.show() # maybe easier for testing
+#plt.savefig('cpu.svg') # for final submission
+
+
+# In[18]:
+
+
+loess_smoothed = lowess( cpu_data['temperature'],cpu_data['timestamp'],frac =0.1)
+loess_smoothed
+lowess()
+
+
+
+# In[19]:
+
+
+plt.figure(figsize=(12, 4))
+plt.plot(cpu_data['timestamp'], cpu_data['temperature'], 'b.', alpha=0.5)
+plt.plot(loess_smoothed[:, 1],'r-',linewidth=4)
+plt.legend(['original graph','loess smoothing'])
+
+
+# In[ ]:
+
+
